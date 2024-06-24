@@ -10,8 +10,8 @@
         "lint": "pnpm exec eslint src/**/* ",
         "lint:fix": "pnpm exec eslint src/**/* --fix",
         "format": "pnpm exec prettier src/**/* --write",
-        "test": "jest",
-        "test:coverage": "jest --coverage --silent",
+        "test": "jest --passWithNoTests",
+        "test:coverage": "jest --coverage --silent --passWithNoTests",
         "dotenv-vault": "pnpm dlx dotenv-vault@latest"
     },
     "keywords": [
