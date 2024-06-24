@@ -1,0 +1,11 @@
+{
+	"recommendations": [
+		"streetsidesoftware.code-spell-checker",
+		"dbaeumer.vscode-eslint",
+		"shd101wyy.markdown-preview-enhanced",
+		"seatonjiang.gitmoji-vscode",
+		"github.vscode-github-actions",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+	]
+}
