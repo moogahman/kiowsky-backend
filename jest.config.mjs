@@ -1,10 +1,19 @@
 export default {
-    preset: 'ts-jest',
+    preset: 'ts-jest/presets/default-esm', // Use this preset for ESM support
     testEnvironment: 'node',
-    testPathIgnorePatterns: ['dist'],
-    transform: { '\\.[jt]sx?$': ['ts-jest', { useESM: true }] },
-    moduleNameMapper: {
-        '(.+)\\.js': '$1',
+    extensionsToTreatAsEsm: ['.ts'], // Treat .ts files as ESM
+    globals: {
+        'ts-jest': {
+            useESM: true,
+        },
     },
-    extensionsToTreatAsEsm: ['.ts'],
+    moduleNameMapper: {
+        '^(\\.{1,2}/.*)\\.js$': '$1', // Resolve .js extensions to .ts files
+    },
+    transform: {
+        '^.+\\.ts$': 'ts-jest', // Transform TypeScript files
+    },
+    transformIgnorePatterns: [
+        'node_modules/(?!firebase)', // Add modules you want to be transformed by Jest here
+    ],
 };
