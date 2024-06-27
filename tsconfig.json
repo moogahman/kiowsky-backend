@@ -24,11 +24,13 @@
 			"dom.iterable"
 		],
 		"jsx": "react-jsx",
+		"types": [
+			"@testing-library/jest-dom"
+		]
 	},
 	"include": [
 		"./src",
-		"./__tests__/",
-		"vitest.setup.ts"
+		"./tests"
 	],
 	"exclude": [
 		"./node_modules",
