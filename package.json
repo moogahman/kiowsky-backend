@@ -25,6 +25,7 @@
     "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
     "devDependencies": {
         "@eslint/js": "^9.5.0",
+        "@testing-library/jest-dom": "^6.4.6",
         "@testing-library/react": "^16.0.0",
         "@types/eslint": "^8.56.10",
         "@types/node": "^20.14.8",
