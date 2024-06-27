@@ -9,7 +9,7 @@ export default defineConfig({
         include: ['**/*.{test,spec}.{ts,tsx}'],
         exclude: ['./node_modules', './dist'],
         css: false,
-        setupFiles: ['./vitest.setup.ts'],
+        setupFiles: ['./src/setupTests.ts'],
         coverage: {
             exclude: configDefaults.coverage.exclude,
             all: true,
