@@ -7,7 +7,7 @@ export default defineConfig({
         include: ['**/*.{test,spec}.{ts,tsx}'],
         exclude: ['./node_modules', './dist'],
         css: false,
-        setupFiles: ['./src/setup.ts'],
+        setupFiles: ['./__tests__/setup.ts'],
         coverage: {
             exclude: configDefaults.coverage.exclude,
             all: true,
