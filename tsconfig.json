@@ -28,7 +28,7 @@
 	"include": [
 		"./src",
 		"./__tests__/",
-		"./src/setupTests.ts"
+		"vitest.setup.ts"
 	],
 	"exclude": [
 		"./node_modules",
