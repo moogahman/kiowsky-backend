@@ -1,57 +1,69 @@
 {
-    "name": "kiowsky-backend",
-    "version": "1.0.0",
-    "description": "",
-    "main": "dist/index.js",
-    "type": "module",
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "rm -rf dist && pnpm tsc -p tsconfig.build.json",
-        "dev": "pnpm build && pnpm start",
-        "lint": "pnpm exec eslint src/**/* ",
-        "lint:fix": "pnpm exec eslint src/**/* --fix",
-        "format": "pnpm exec prettier src/**/* --write",
-        "test": "vitest",
-        "test:coverage": "vitest run --coverage",
-        "dotenv-vault": "pnpm dlx dotenv-vault@latest"
-    },
-    "keywords": [
-        "mcdonalds",
-        "maccas",
-        "kiosk",
-        "system"
+  "name": "kiowsky-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && pnpm tsc -p tsconfig.build.json",
+    "dev": "pnpm build && pnpm start",
+    "lint": "pnpm exec eslint src/**/* ",
+    "lint:fix": "pnpm exec eslint src/**/* --fix",
+    "format": "pnpm exec prettier src/**/* --write",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "dotenv-vault": "pnpm dlx dotenv-vault@latest"
+  },
+  "keywords": [
+    "mcdonalds",
+    "maccas",
+    "kiosk",
+    "system"
+  ],
+  "author": "moogahman",
+  "license": "GPL-3.0-only",
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.14.8",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.3",
+    "globals": "^15.6.0",
+    "jsdom": "^24.1.0",
+    "prettier": "^3.3.2",
+    "react-scripts": "^5.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "^0.10.1",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.12.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "author": "moogahman",
-    "license": "GPL-3.0-only",
-    "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
-    "devDependencies": {
-        "@eslint/js": "^9.5.0",
-        "@testing-library/jest-dom": "^6.4.6",
-        "@testing-library/react": "^16.0.0",
-        "@types/eslint": "^8.56.10",
-        "@types/node": "^20.14.8",
-        "@types/react": "^18.3.3",
-        "@types/react-dom": "^18.3.0",
-        "@vitejs/plugin-react": "^4.3.1",
-        "@vitest/coverage-v8": "^1.6.0",
-        "eslint": "~8.57.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-react": "^7.34.3",
-        "globals": "^15.6.0",
-        "jsdom": "^24.1.0",
-        "prettier": "^3.3.2",
-        "react-scripts": "^5.0.1",
-        "ts-node": "^10.9.2",
-        "typescript": "^5.5.2",
-        "typescript-eslint": "^7.13.1",
-        "vitest": "^1.6.0"
-    },
-    "dependencies": {
-        "@t3-oss/env-core": "^0.10.1",
-        "dotenv": "^16.4.5",
-        "firebase": "^10.12.2",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "zod": "^3.23.8"
-    }
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
