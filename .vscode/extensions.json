@@ -7,5 +7,6 @@
 		"github.vscode-github-actions",
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
+		"vitest.explorer"
 	]
 }
